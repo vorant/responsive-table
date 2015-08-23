@@ -33,6 +33,7 @@ responsiveTable.init()
 * `class` - css class of you table 
 * `amount` - determine amount of content column depends on screen width.
 * `maxWidth` - max screen width when response table is showed.
+
 ## Copyriting
 Library distributed AS IS and you may do it with it what do you want.
 
