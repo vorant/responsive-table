@@ -1,0 +1,16 @@
+.table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+.table__cell {
+    border: 1px solid #7c7c7c;
+}
+.table__heading {
+    font: 16px "Helvetica Neue", Helvetica, Arial;
+    padding: 10px 5px;
+}
+.table__cell-content {
+    font: 16px "Helvetica Neue", Helvetica, Arial;
+    padding: 10px 5px;
+}

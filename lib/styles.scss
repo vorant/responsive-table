@@ -1,0 +1,97 @@
+$border-color: #7C7C7C;
+$button-size: 14px;
+$headers-width: 120px;
+$buttons-width: 90px;
+
+.vr-tr {
+    width: 100%;
+    position: relative;
+    margin: 10px 0;
+    border-bottom: 1px solid $border-color;
+
+    &__headers {
+        width: $headers-width;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    &__buttons {
+        width: $buttons-width;
+        border: 1px solid $border-color;
+        border-left: none;
+        border-bottom: none;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+    }
+    &__button {
+        height: 50%;
+        cursor: pointer;
+    }
+
+    &__button:before {
+        content: '';
+        top: 50%;
+        position: relative;
+        display: block;
+        text-align: center;
+        margin: -15px auto 0 auto;
+        height: 0;
+        width: 0;
+        overflow: hidden;
+        border: $button-size solid $border-color;
+
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+    }
+    &__button._next:before {
+        border-right-color: transparent;
+        right: - $button-size/2;
+    }
+    &__button._prev:before  {
+        border-left-color: transparent;
+        right: $button-size/2;
+    }
+    &__buttonText {
+        top: 50%;
+        position: relative;
+        display: block;
+        text-align: center;
+    }
+    &__content {
+        height: 100%;
+        position: absolute;
+        right: $buttons-width;
+        left: $headers-width;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        display: block;
+        overflow: hidden;
+    }
+    &__contentTable {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    &__contentCol {
+        display: none;
+        vertical-align: top;
+        padding: 0;
+        margin: 0;
+    }
+    &__contentCol._active {
+        display: table-cell;
+    }
+    &__cell {
+        border-top: 1px solid $border-color;
+        border-right: 1px solid $border-color;
+    }
+    &__headers .vr-tr__cell {
+        border: 1px solid $border-color;
+        border-bottom: none;
+    }
+}
+
