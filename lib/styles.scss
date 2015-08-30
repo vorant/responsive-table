@@ -71,6 +71,7 @@ $buttons-width: 90px;
         margin: 0;
         display: block;
         overflow: hidden;
+        border-right: 1px solid $border-color;
     }
     &__contentTable {
         width: 100%;
@@ -89,6 +90,10 @@ $buttons-width: 90px;
         border-top: 1px solid $border-color;
         border-right: 1px solid $border-color;
     }
+    &__contentCol._last &__cell{
+        border-right: 1px solid transparent;
+    }
+
     &__headers .vr-tr__cell {
         border: 1px solid $border-color;
         border-bottom: none;
