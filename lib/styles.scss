@@ -30,22 +30,33 @@ $buttons-width: 90px;
     &__button {
         height: 50%;
         cursor: pointer;
+        text-align: center;
     }
 
     &__button:before {
         content: '';
-        top: 50%;
+//        top: 50%;
         position: relative;
-        display: block;
+//        display: block;
         text-align: center;
-        margin: -15px auto 0 auto;
+//        margin: -15px auto 0 auto;
         height: 0;
         width: 0;
         overflow: hidden;
         border: $button-size solid $border-color;
 
+        display: inline-block;
+        vertical-align: middle;
+
         border-top-color: transparent;
         border-bottom-color: transparent;
+    }
+    &__button:after {
+        width: 0;
+        height: 100%;
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
     }
     &__button._next:before {
         border-right-color: transparent;
