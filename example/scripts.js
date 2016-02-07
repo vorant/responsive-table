@@ -1,6 +1,6 @@
 (function() {
     var params = {
-        class: 'table',
+        query: 'table',
         amount: [
             [0,   480],   // 1
             [481, 568],   // 2
