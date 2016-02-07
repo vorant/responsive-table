@@ -2,15 +2,17 @@
 Invert table heads direction on small screens 
 
 Big screen
-![Big screen](https://rawgit.com/vorant/resonsive-table/master/img/big.png)
+
+![Big screen](https://raw.githubusercontent.com/vorant/responsive-table/master/img/big.PNG)
 
 Small screen
-![Small screen 1](https://rawgit.com/vorant/resonsive-table/master/img/small1.png)
-![Small screen 2](https://rawgit.com/vorant/resonsive-table/master/img/small2.png)
+
+![Small screen 1](https://raw.githubusercontent.com/vorant/responsive-table/master/img/small1.PNG)
+![Small screen 2](https://raw.githubusercontent.com/vorant/responsive-table/master/img/small2.PNG)
 
 
 ##Demo
-[Here is a demo](https://rawgit.com/vorant/resonsive-table/master/example/index.html)
+[Here is a demo](https://rawgit.com/vorant/responsive-table/master/example/index.html)
 
 ## How it works
 Responsive-table will be showed at small screens (default 768px, but you may change it), but normal table will be hidden. When screen width is more then(768px) tables will switched; 
